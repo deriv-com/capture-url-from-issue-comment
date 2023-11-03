@@ -1,7 +1,7 @@
 {
     "author": "DerivFE <fe-access@deriv.com>",
     "name": "capture-url-from-issue-comment",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Capture a URL from github issue comment and feed it into your next GitHub action.",
     "main": "index.js",
     "husky": {
@@ -14,7 +14,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npx tsc"
+        "build": "npx ncc build index.ts --license licenses.txt"
     },
     "repository": {
         "type": "git",
@@ -32,6 +32,7 @@
     },
     "devDependencies": {
         "@types/node": "^20.8.10",
+        "@vercel/ncc": "^0.38.1",
         "husky": "^8.0.3",
         "lint-staged": "^10.5.4",
         "prettier": "^3.0.3",
