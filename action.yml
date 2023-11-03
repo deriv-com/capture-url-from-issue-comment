@@ -29,5 +29,5 @@ outputs:
     description: "The captured URL from issue comment"
     
 runs:
-  using: "node18"
+  using: "node16"
   main: "dist/index.js"
