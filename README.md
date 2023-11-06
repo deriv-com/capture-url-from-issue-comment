@@ -16,7 +16,7 @@ Please note:
 - `cancel_pattern`: Regular expression pattern to cancel the action when comment contains this pattern.
 - `GITHUB_TOKEN`: Pass this (as `${{secrets.GITHUB_TOKEN}}`) to cancel actions instead of failing them.
 - `url_pattern`: Regular expression pattern to capture the URL. Ensure first capture group captures the URL.
-- `bot_name`: The name of the action commenting on pull requests.
+- `user_name`: The name of the action commenting on pull requests.
 
 ## Outputs
 

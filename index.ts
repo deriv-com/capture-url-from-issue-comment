@@ -29,11 +29,12 @@ const runAction = async () => {
         return;
     }
 
-    const bot_name = core.getInput('bot_name');
+    const user_name = core.getInput('user_name');
 
-    if (comment.user.login !== bot_name) {
-        console.log('Comment did not originate from bot.', {
-            bot_name,
+    if (comment.user.login !== user_name) {
+        console.log('Comment did not originate from the user.', {
+            expected: user_name,
+            received: comment.user.login,
         });
         await cancelAction();
     }
